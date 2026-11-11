@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Răng Đen Môi Đỏ — Tờ Báo Nghệ Thuật &amp; Thẩm Mỹ Xưa</title>
+  <!-- Google Fonts: Cormorant Garamond, Great Vibes (Script), Newsreader, Be Vietnam Pro, Space Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=3" />
+</head>
+<body class="modal-open" data-lang="vi">
+
+  <!-- ========================================================================
+       1. POP-UP CHỌN NGÔN NGỮ (KHUNG TEM RĂNG CƯA Điệu Đà)
+       ======================================================================== -->
+  <div id="lang-modal" class="lang-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="lang-modal-card">
+      <div class="lang-modal-inner-stamp">
+        <div class="modal-sticker-row">
+          <img src="assets/crm-02.png" alt="Răng đen" />
+          <img src="assets/crm-03.png" alt="Răng trắng" />
+        </div>
+        <h1 id="modal-heading" class="modal-title">RĂNG ĐEN MÔI ĐỎ</h1>
+        <p class="modal-prompt">
+          Chọn hệ ngôn ngữ trước khi cười lộ răng nha 👄👇<br />
+          <em>Pick your language to start scrolling:</em>
+        </p>
+        <div class="modal-btn-group">
+          <button type="button" id="btn-choose-vi" class="lang-btn lang-btn-primary">
+            <span class="lang-btn-name">TIẾNG VIỆT</span>
+            <span class="lang-btn-caption">Hệ Tiếng Việt</span>
+          </button>
+          <button type="button" id="btn-choose-en" class="lang-btn">
+            <span class="lang-btn-name">ENGLISH</span>
+            <span class="lang-btn-caption">English Mode</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       KHÔNG GIAN BÁO NGHỆ THUẬT (AIRY EDITORIAL VITRINE)
+       ======================================================================== -->
+  <main class="art-canvas">
+
+    <!-- Thanh tiêu đề mảnh đầu trang -->
+    <div class="top-whisper-bar">
+      <span>
+        <span class="lang-vi">CHUYÊN SAN THỊ GIÁC &amp; THẨM MỸ DÂN GIAN</span>
+        <span class="lang-en">FOLK AESTHETICS &amp; VISUAL ART ZINE</span>
+      </span>
+      <span>@NENE.NETH</span>
+      <button type="button" id="btn-switch-lang" class="lang-pill-switch">
+        <span class="lang-vi">VI ⇄ EN</span>
+        <span class="lang-en">EN ⇄ VI</span>
+      </button>
+    </div>
+
+    <!-- ==================== HERO VITRINE (HÌNH 1: TEM RĂNG CƯA + NỀN ẨN KÝ HỌA HOA) ==================== -->
+    <header class="hero-vitrine">
+      <!-- Tranh cô gái ôm hoa phóng to, giảm opacity làm nền ẩn hòa quyện vào giấy -->
+      <img src="assets/illus-gia-tri-hoa-bg.png" alt="" class="hero-bg-watermark" aria-hidden="true" />
+      <img src="assets/illus-gia-tri-hoa-bg.png" alt="" class="hero-bg-watermark-left" aria-hidden="true" />
+
+      <div class="hero-meta-row">
+        <span>
+          <span class="lang-vi">Hạt huyền &amp; Trầu cay</span>
+          <span class="lang-en">Jet-black &amp; Betel leaf</span>
+        </span>
+        <span>1900s — 2026</span>
+      </div>
+
+      <h1 class="hero-giant-title">
+        <span class="lang-vi">RĂNG ĐEN <span class="script-accent">Môi Đỏ</span></span>
+        <span class="lang-en">BLACK TEETH <span class="script-accent">Crimson</span></span>
+      </h1>
+
+      <!-- Khung tem cổ điển -->
+      <div class="hero-stamp-wrap">
+        <div class="hero-stamp-inner">
+          <img loading="lazy" decoding="async" src="assets/artwork-closeup.png" alt="Răng Đen Môi Đỏ Artwork" />
+        </div>
+      </div>
+
+      <p class="hero-verse-whisper">
+        <span class="lang-vi">“Năm quan mua lấy miệng cười — Mười quan chẳng tiếc, tiếc người răng đen”</span>
+        <span class="lang-en">“Five coins to buy a smiling mouth — Ten coins spared without regret for blackened teeth”</span>
+      </p>
+    </header>
+
+    <svg class="red-thread-divider" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C220,-10 380,70 600,25 C780,-10 880,55 1000,20" />
+    </svg>
+
+    <!-- ==================== PHẦN 01: VISUAL ĐỈNH CHÓP THỜI XƯA ==================== -->
+    <section class="sec-story-collage">
+      <div class="story-copy">
+        <span class="index-num">(01)</span>
+        <h2 class="editorial-heading">
+          <span class="lang-vi"><span class="cursive-cap">C</span>hưa có son lì hay kẻ mày, các cụ ngày xưa <em>“slay”</em> bằng gì?</span>
+          <span class="lang-en"><span class="cursive-cap">B</span>efore matte lipstick, how did our ancestors <em>slay</em>?</span>
+        </h2>
+
+        <!-- Mở đầu bằng đầy đủ 2 câu ca dao tục ngữ -->
+        <blockquote class="opening-cadao-box">
+          <div class="lang-vi">
+            <div class="cadao-stanza">
+              “Năm quan mua lấy miệng cười,<br />
+              Mười quan chẳng tiếc, tiếc người răng đen.”
+            </div>
+            <div class="cadao-stanza">
+              “Nhớ hàng tre thẳng đọt măng,<br />
+              Nhớ cô con gái hàm răng đen huyền.”
+            </div>
+            <cite>— Ca dao Việt Nam</cite>
+          </div>
+          <div class="lang-en">
+            <div class="cadao-stanza">
+              “Five coins to buy a smiling mouth,<br />
+              Ten coins spared without regret for blackened teeth.”
+            </div>
+            <div class="cadao-stanza">
+              “Remembering straight bamboo rows and tender shoots,<br />
+              Remembering the girl with teeth of deepest jet-black.”
+            </div>
+            <cite>— Traditional Vietnamese Folk Verse</cite>
+          </div>
+        </blockquote>
+
+        <p class="lang-vi">
+          Thời chưa có son kem lì hay filter bóp mặt, “bộ nhận diện” đỉnh nhất của các bà, các mẹ chính là: <strong>tóc vấn gọn, môi đỏ trầu cay và một hàm răng đen bóng như gương</strong>. Đừng tưởng tự nhiên mà có — ngày xưa, răng càng đen nhánh như hạt na thì độ “chanh sả”, đoan trang và sức hút càng tăng gấp bội!
+        </p>
+        <p class="lang-en">
+          Long before matte lip tints or beauty filters, the ultimate “it-girl” starter pack for Vietnamese women was <strong>neatly coiled hair, betel-red lips, and mirror-glossy black teeth</strong>. The darker and shinier the teeth—like custard-apple seeds—the higher the elegance and charm.
+        </p>
+
+        <!-- Đoạn bình về quan niệm răng đen ngày xưa -->
+        <p class="lang-vi">
+          Trong mắt người xưa, hàm răng đen không đơn thuần là chuyện làm dáng bên ngoài, mà còn là thước đo của <strong>sự nết na, kín đáo và tấm lòng thủy chung son sắt</strong>. Người ta tin rằng chỉ những ai đủ kiên nhẫn, chịu thương chịu khó vượt qua cả tháng trời kiêng khem nhuộm răng thì mới biết trân quý nếp nhà. Nhìn một nụ cười răng đen huyền bên cơi trầu cay và tiếng dao têm trầu <em>“tách tách”</em> đầu ngõ là thấy cả cái tình đằm thắm, dịu dàng của hồn quê Việt.
+        </p>
+        <p class="lang-en">
+          In our ancestors’ eyes, blackened teeth were far more than cosmetic flair—they were the measure of <strong>modesty, patience, and unwavering marital devotion</strong>. People believed that only someone patient enough to endure a month of rigorous dyeing truly cherished family traditions. A jet-black smile beside a spicy betel tray and the crisp <em>“click-click”</em> of the paring knife embodied the warm, soulful grace of the Vietnamese countryside.
+        </p>
+
+        <blockquote class="poetic-pullquote">
+          <span class="lang-vi">“Người Đàng Ngoài không tin rằng con người ta có hàm răng đẹp cho đến khi hàm răng được nhuộm đen như hạt huyền.”</span>
+          <span class="lang-en">“The people of Tonkin do not believe anyone has beautiful teeth until they are dyed as black as jet.”</span>
+          <span>— Daniel Tavernier (1639–1645)</span>
+        </blockquote>
+
+        <p class="lang-vi">
+          Không chỉ phái nữ, đến năm 1938 vẫn có tới <strong>80% người dân Bắc Bộ</strong> (cả nam lẫn nữ) nhuộm răng đen như một nghi thức trưởng thành từ tuổi 13–15 <em>(theo học giả Pháp Pierre Huard)</em>.
+        </p>
+        <p class="lang-en">
+          Not just women—as late as 1938, up to <strong>80% of Northern Vietnamese locals</strong> (men and women alike) dyed their teeth black as a coming-of-age rite at 13–15 <em>(French scholar Pierre Huard)</em>.
+        </p>
+      </div>
+
+      <!-- Cụm ảnh collage dán băng keo giấy -->
+      <div class="staggered-cluster">
+        <div class="cluster-col-left">
+          <div class="organic-photo tape-top-left tilt-left">
+            <img loading="lazy" decoding="async" src="assets/hist-tonkin-bench.jpg" alt="Thiếu nữ Bắc Bộ nhuộm răng" />
+            <p class="photo-note">
+              <span class="lang-vi"><strong>Tonkin A35972:</strong> Hai cô gái Bắc Bộ ngồi chõng tre ngậm thuốc nhuộm răng.</span>
+              <span class="lang-en"><strong>Tonkin A35972:</strong> Northern Vietnamese women on a bamboo bench applying tooth dye.</span>
+            </p>
+          </div>
+
+          <div class="organic-photo tilt-right">
+            <img loading="lazy" decoding="async" src="assets/hist-elder-man.jpg" alt="Cụ ông nhuộm răng đen" />
+            <p class="photo-note">
+              <span class="lang-vi"><strong>Không riêng phái nữ:</strong> Các cụ ông nho sĩ xưa cũng nhuộm răng đen nhánh.</span>
+              <span class="lang-en"><strong>Men Included:</strong> Vietnamese scholars also wore jet-black teeth.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="cluster-col-right">
+          <div class="organic-photo tape-top-right tilt-right">
+            <img loading="lazy" decoding="async" src="assets/hist-smile-woman.jpg" alt="Nụ cười răng đen hạt na" />
+            <p class="photo-note">
+              <span class="lang-vi"><strong>Visual chuẩn mực:</strong> Răng đen bóng như hạt na, hạt huyền.</span>
+              <span class="lang-en"><strong>The Ideal Smile:</strong> Teeth glossy as custard-apple seeds.</span>
+            </p>
+          </div>
+
+          <div class="organic-photo tilt-left">
+            <img loading="lazy" decoding="async" src="assets/hist-tonkin-postcard.jpg" alt="Bưu thiếp phụ nữ Bắc Bộ xưa" />
+            <p class="photo-note">
+              <span class="lang-vi"><strong>Postcard Đông Dương:</strong> Vẻ đài các của phụ nữ Bắc Bộ đầu thế kỷ XX.</span>
+              <span class="lang-en"><strong>Indochina Postcard:</strong> Noble grace of an early 20th-century Northern lady.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="red-thread-divider" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,15 C300,65 450,-15 720,35 C850,55 920,10 1000,30" />
+    </svg>
+
+    <!-- ==================== PHẦN 02: NGƯỜI XƯA KỂ RẰNG (HÌNH 3: PHÓNG TO STICKER TRUYỀN MIỆNG) ==================== -->
+    <section class="sec-elders-tale">
+      <div class="elders-sticker-hero">
+        <img loading="lazy" decoding="async" src="assets/crm-01.png" alt="Chuyện người xưa truyền miệng" />
+        <span class="elders-sticker-caption">
+          <span class="lang-vi">Minh họa: Chuyện rỉ tai đầu làng (@nene.neth)</span>
+          <span class="lang-en">Illustration: Village whispers (@nene.neth)</span>
+        </span>
+      </div>
+
+      <div class="elders-text-col">
+        <span class="index-num">(02)</span>
+        <h2 class="editorial-heading">
+          <span class="lang-vi"><span class="cursive-cap">N</span>gười xưa kể rằng: Giữ màu răng đen cũng là <em>giữ bản sắc, giữ nước</em></span>
+          <span class="lang-en"><span class="cursive-cap">E</span>lders used to tell: Keeping black teeth meant <em>defending our identity &amp; homeland</em></span>
+        </h2>
+
+        <p class="lang-vi">
+          Người xưa kể rằng, ngoài chuyện làm duyên và bảo vệ men răng, màu răng đen nhánh còn được truyền tai nhau như một “dấu nhận diện” riêng để người Nam khẳng định bản sắc, quyết không bị đồng hóa với phương Bắc qua bao cuộc chiến giữ nước. Chẳng thế mà năm 1789, vua <strong>Quang Trung</strong> từng khích lệ ba quân bằng lời hịch đi vào sử sách:
+        </p>
+        <p class="lang-en">
+          Elders used to tell that beyond charm and enamel care, jet-black teeth served as a proud mark of cultural sovereignty—refusing assimilation by the North through centuries of defending the homeland. In 1789, Emperor <strong>Quang Trung</strong> famously rallied his troops:
+        </p>
+
+        <div class="quang-trung-calligraphy">
+          <span class="lang-vi">“Đánh cho để dài tóc, đánh cho để răng đen...”</span>
+          <span class="lang-en">“Fight so we may keep our hair long, fight so we may keep our teeth black...”</span>
+          <small>
+            <span class="lang-vi">— Giữ lấy màu răng cũng là giữ trọn bản sắc và chủ quyền dân tộc (Trích nghiên cứu P.H. Linh, ĐHQGHN)</span>
+            <span class="lang-en">— Protecting our traditional smile meant defending national sovereignty (Cited in P.H. Linh, VNU Hanoi)</span>
+          </small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PHẦN 03A: DÂY PHƠI KẸP GỖ VINTAGE (HÌNH 8) ==================== -->
+    <section class="sec-clothesline">
+      <div class="clothesline-header">
+        <span class="index-num">(03)</span>
+        <h2 class="editorial-heading">
+          <span class="lang-vi"><span class="cursive-cap">L</span>àm sao để có hàm răng<br /><em>Đen Huyền?</em></span>
+          <span class="lang-en"><span class="cursive-cap">H</span>ow did they craft<br /><em>Jet-Black Teeth?</em></span>
+        </h2>
+      </div>
+
+      <!-- Dây phơi tầng 1 (2 món treo kẹp gỗ vừa khít màn hình điện thoại) -->
+      <div class="clothesline-row">
+        <svg class="clothesline-cord-svg" viewBox="0 0 500 55" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,6 Q250,48 500,4" />
+        </svg>
+
+        <div class="clothesline-items-grid">
+          <!-- Item 1: Ảnh treo kẹp gỗ -->
+          <div class="hanging-card peg-tilt-left">
+            <div class="wooden-peg"></div>
+            <div class="hanging-photo-frame tilt-photo-left">
+              <img loading="lazy" decoding="async" src="assets/real-phoi-cau.jpg" alt="Cau khô và vỏ cau" />
+              <span>
+                <span class="lang-vi">Vỏ cau khô &amp; thảo mộc</span>
+                <span class="lang-en">Dried areca &amp; herbs</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Item 2: Thẻ giấy Bước 1 & 2 -->
+          <div class="hanging-card peg-tilt-right">
+            <div class="wooden-peg"></div>
+            <div class="parchment-note">
+              <span class="note-step-tag">Bước 01 &amp; 02 • 15 Ngày</span>
+              <h4>
+                <span class="lang-vi">Mở men &amp; Nhuộm đỏ</span>
+                <span class="lang-en">Etching &amp; Red Base</span>
+              </h4>
+              <p class="lang-vi">Chà răng bằng vỏ cau khô, ngậm chanh giấm cho mở men; đắp <strong>nhựa cánh kiến đỏ</strong> suốt 10 đêm.</p>
+              <p class="lang-en">Scrubbing with areca husk and lemon-vinegar, then binding <strong>sticklac resin</strong> for 10 nights.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dây phơi tầng 2 (2 thẻ giấy treo kẹp gỗ) -->
+      <div class="clothesline-row">
+        <svg class="clothesline-cord-svg" viewBox="0 0 500 55" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,8 Q250,50 500,6" />
+        </svg>
+
+        <div class="clothesline-items-grid">
+          <!-- Item 3: Thẻ giấy Bước 3 & 4 -->
+          <div class="hanging-card peg-tilt-left">
+            <div class="wooden-peg"></div>
+            <div class="parchment-note">
+              <span class="note-step-tag">Bước 03 &amp; 04 • 10 Ngày</span>
+              <h4>
+                <span class="lang-vi">Lên màu đen &amp; Phủ bóng</span>
+                <span class="lang-en">Black Dye &amp; Polish</span>
+              </h4>
+              <p class="lang-vi">Phết <strong>lá phèn đen</strong> trộn khoáng sắt lấy sắc huyền; quết <strong>nhựa gáo dừa đốt</strong> tạo độ bóng gương.</p>
+              <p class="lang-en">Applying <strong>black alum leaves</strong> and iron sulfate; sealing with burnt coconut tar for mirror gloss.</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Thẻ giấy Beauty is Pain -->
+          <div class="hanging-card peg-tilt-right">
+            <div class="wooden-peg"></div>
+            <div class="parchment-note">
+              <span class="note-step-tag">Beauty is Pain</span>
+              <h4>
+                <span class="lang-vi">30 Ngày “Nuốt Chửng”</span>
+                <span class="lang-en">30 Days No Chewing</span>
+              </h4>
+              <p class="lang-vi">Môi sưng vều, răng ê buốt. Kiêng nhai, kiêng đồ nóng, chỉ nuốt chửng cơm chan nước nguội cả tháng!</p>
+              <p class="lang-en">Swollen lips and aching teeth—swallowing cold rice with water without chewing for a month!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dây phơi tầng 3 (Thẻ giấy + Ảnh cơi trầu nghiêng) -->
+      <div class="clothesline-row">
+        <svg class="clothesline-cord-svg" viewBox="0 0 500 55" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,5 Q250,48 500,8" />
+        </svg>
+
+        <div class="clothesline-items-grid">
+          <!-- Item 5: Thẻ giấy Bảo vệ men răng -->
+          <div class="hanging-card peg-tilt-left">
+            <div class="wooden-peg"></div>
+            <div class="parchment-note">
+              <span class="note-step-tag">Khoa học dân gian</span>
+              <h4>
+                <span class="lang-vi">Lớp “Sơn Mài” Giữ Răng</span>
+                <span class="lang-en">Natural Cavity Shield</span>
+              </h4>
+              <p class="lang-vi">Chất <em>tannin</em> và <em>ion sắt</em> kết tinh bọc kín men răng chống sâu, kết hợp nhai trầu cau sát trùng.</p>
+              <p class="lang-en"><em>Tannins</em> and <em>iron ions</em> sealed enamel against decay, maintained by antiseptic betel chewing.</p>
+            </div>
+          </div>
+
+          <!-- Item 6: Ảnh treo kẹp gỗ nghiêng -->
+          <div class="hanging-card peg-tilt-right">
+            <div class="wooden-peg"></div>
+            <div class="hanging-photo-frame tilt-photo-right">
+              <img loading="lazy" decoding="async" src="assets/hist-betel-kit.jpg" alt="Bộ dụng cụ ăn trầu cổ" />
+              <span>
+                <span class="lang-vi">Cơi trầu &amp; ống vôi cổ</span>
+                <span class="lang-en">Vintage betel &amp; lime kit</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PHẦN 03B: NGUỒN GỐC & MỤC ĐÍCH Ở CÁC QUỐC GIA LÂN CẬN ==================== -->
+      <div class="asia-origins-section">
+        <div class="asia-origins-intro">
+          <h3 class="editorial-heading" style="font-size: clamp(1.55rem, 3vw, 2.15rem);">
+            <span class="lang-vi">Nguồn gốc &amp; Mục đích nhuộm răng ở <em>các quốc gia lân cận</em></span>
+            <span class="lang-en">Origins &amp; Social Purpose in <em>Neighboring Countries</em></span>
+          </h3>
+        </div>
+
+        <div class="asia-gallery-spread">
+          <!-- Nhật Bản -->
+          <div class="asia-floating-item">
+            <span class="index-num">NHẬT BẢN • TỤC OHAGURO (お歯黒)</span>
+            <div class="organic-photo tape-top-left tilt-left">
+              <img loading="lazy" decoding="async" src="assets/real-ohaguro-1.jpg" alt="Phụ nữ Nhật Bản nhuộm răng Ohaguro" />
+            </div>
+            <span class="asia-purpose-tag">
+              <span class="lang-vi">Mục đích: Biểu tượng Quý tộc &amp; Thủy chung</span>
+              <span class="lang-en">Purpose: Aristocratic Rank &amp; Fidelity</span>
+            </span>
+            <h4>
+              <span class="lang-vi">Từ Hoàng gia, Samurai đến Phụ nữ kết hôn</span>
+              <span class="lang-en">From Imperial Nobles &amp; Samurai to Married Women</span>
+            </h4>
+            <p class="lang-vi">
+              Khởi nguồn từ thời Heian (thế kỷ VIII–XII), ban đầu <strong>chỉ giới quý tộc hoàng gia và võ sĩ Samurai</strong> mới được nhuộm răng đen (bằng nước sắt <em>Kanemizu</em> &amp; bột <em>Fushi</em>) để thể hiện quyền quý và lòng trung thành “không đổi màu”. Sang thời Edo, tục này trở thành dấu hiệu của phụ nữ đã lập gia đình và các Geisha.
+            </p>
+            <p class="lang-en">
+              Originating in the Heian period (8th–12th c.), tooth blackening was initially <strong>exclusive to Imperial aristocrats and Samurai</strong> (using <em>Kanemizu</em> iron &amp; <em>Fushi</em> gallnut) to signify nobility and unwavering loyalty. By the Edo era, it marked married women and Geisha.
+            </p>
+          </div>
+
+          <!-- Vân Nam, Lào, Thái, Người Lự -->
+          <div class="asia-floating-item">
+            <span class="index-num">NAM TRUNG QUỐC • LÀO • THÁI • NGƯỜI LỰ</span>
+            <div class="organic-photo tilt-right">
+              <img loading="lazy" decoding="async" src="assets/real-dan-toc-lu.jpg" alt="Phụ nữ dân tộc Lự với hàm răng đen" />
+            </div>
+            <span class="asia-purpose-tag">
+              <span class="lang-vi">Mục đích: Nghi lễ Trưởng thành &amp; Hẹn hò</span>
+              <span class="lang-en">Purpose: Coming-of-Age &amp; Courtship Rite</span>
+            </span>
+            <h4>
+              <span class="lang-vi">Dấu mốc thành đinh &amp; Thuốc nam giữ răng</span>
+              <span class="lang-en">Adulthood Milestone &amp; Herbal Protection</span>
+            </h4>
+            <p class="lang-vi">
+              Với các tộc người Bách Việt cổ, người Lự, người Thái ở Vân Nam và Tây Bắc, thiếu nữ 13–15 tuổi phải nhuộm răng đen bằng <strong>nhựa cánh kiến rừng</strong> hoặc <strong>mồ hóng nhựa cành ổi, tre tươi đốt</strong> thì mới được coi là trưởng thành, đủ tư cách tìm bạn trăm năm và tránh sâu răng nơi rừng ẩm.
+            </p>
+            <p class="lang-en">
+              Among ancient Baiyue groups, the Lu, and Tai peoples, girls aged 13–15 blackened their teeth with <strong>forest sticklac</strong> or <strong>burnt bamboo/guava tar</strong> as a mandatory rite of passage before courtship and as herbal protection against humid jungle decay.
+            </p>
+          </div>
+
+          <!-- Đông Nam Á Hải Đảo -->
+          <div class="asia-floating-item">
+            <span class="index-num">MALAYSIA • INDONESIA • PHILIPPINES</span>
+            <div class="organic-photo tape-top-right tilt-left">
+              <img loading="lazy" decoding="async" src="assets/hist-betel-plate.jpg" alt="Trầu cau và vôi" />
+            </div>
+            <span class="asia-purpose-tag">
+              <span class="lang-vi">Mục đích: Phân biệt Con người Văn minh</span>
+              <span class="lang-en">Purpose: Mark of Civilized Humanity</span>
+            </span>
+            <h4>
+              <span class="lang-vi">Khẳng định phẩm giá con người trước tự nhiên</span>
+              <span class="lang-en">Separating Humans from Wild Beasts</span>
+            </h4>
+            <p class="lang-vi">
+              Cư dân hải đảo xưa quan niệm chỉ có thú hoang hay ma quỷ mới để lộ hàm răng trắng nhởn. Vì thế, việc mài và nhuộm đen răng bằng <strong>nhựa gáo dừa đốt, khoáng sắt và trầu cau</strong> là nghi thức thiêng liêng khẳng định vẻ đẹp văn minh và vị thế xã hội trong bộ tộc.
+            </p>
+            <p class="lang-en">
+              Island communities traditionally believed only wild animals and spirits bared raw white teeth. Coating teeth with <strong>burnt coconut shell resin, iron clay, and betel</strong> was a sacred rite affirming human civilization and tribal status.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="red-thread-divider" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 C240,65 480,-15 740,35 C880,60 940,10 1000,25" />
+    </svg>
+
+    <!-- ==================== PHẦN 04: ARTWORK VITRINE (HÌNH 5 & 6: BỐ CỤC THẲNG THỚM KIỂU GALLERY) ==================== -->
+    <section class="sec-artwork-vitrine">
+      <span class="index-num">(04)</span>
+      <h2 class="vitrine-top-title">
+        <span class="lang-vi">ARTWORK • RĂNG ĐEN MÔI ĐỎ</span>
+        <span class="lang-en">ARTWORK • BLACK TEETH, CRIMSON LIPS</span>
+      </h2>
+
+      <!-- Hàng trên (Giống hệt Hình 6): Trái ngang + Giữa dọc + Phải chữ & Quote lớn -->
+      <div class="vitrine-upper-grid">
+        <div class="vitrine-straight-card">
+          <img loading="lazy" decoding="async" src="assets/artwork-main.png" alt="Key Visual Răng Đen Môi Đỏ" />
+          <p class="vitrine-micro-caption">
+            <span class="lang-vi">Key Visual — Cuộc gặp gỡ thị giác giữa nho sĩ xưa và cô gái hiện đại trên nền gạch bông cổ.</span>
+            <span class="lang-en">Key Visual — A visual encounter between a traditional scholar and a modern girl against vintage tiles.</span>
+          </p>
+        </div>
+
+        <div class="vitrine-straight-card">
+          <img loading="lazy" decoding="async" src="assets/artwork-fan.png" alt="Handfan Artwork" />
+          <p class="vitrine-micro-caption">
+            <span class="lang-vi">Ấn phẩm Quạt Xếp Cầm Tay (Handfan) phối dây chuỗi hạt đen huyền.</span>
+            <span class="lang-en">Folding Handfan edition paired with glossy jet-black bead tassels.</span>
+          </p>
+        </div>
+
+        <div class="vitrine-quote-col">
+          <p class="lang-vi">
+            Lấy cảm hứng từ chuẩn mực thẩm mỹ “răng đen hạt huyền” đã dần ngủ quên, bộ Artwork tái hiện nét duyên truyền thống bằng ngôn ngữ minh họa đương đại:
+          </p>
+          <p class="lang-en">
+            Inspired by the bygone “jet-black teeth” beauty standard, the Artwork collection reimagines folk grace through contemporary illustration:
+          </p>
+          <div class="vitrine-display-quote">
+            <span class="lang-vi">«NĂM QUAN MUA LẤY MIỆNG CƯỜI, MƯỜI QUAN CHẲNG TIẾC, TIẾC NGƯỜI RĂNG ĐEN.»</span>
+            <span class="lang-en">«FIVE COINS TO BUY A SMILE, TEN COINS SPARED FOR BLACKENED TEETH.»</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hàng dưới: Thông số tác phẩm gọn gàng (Đã bỏ hình cái hộp) -->
+      <div class="vitrine-lower-specs">
+        <div class="specs-brand-col">
+          <img loading="lazy" decoding="async" src="assets/crm-02.png" alt="Biểu tượng Răng Đen Môi Đỏ" class="specs-ornament-Sticker" />
+          <h3 class="specs-heading">
+            <span class="lang-vi">THÔNG TIN TÁC PHẨM</span>
+            <span class="lang-en">SPECIFICATIONS</span>
+          </h3>
+        </div>
+
+        <dl class="specs-two-col">
+          <div class="spec-block">
+            <dt>
+              <span class="lang-vi">Tác giả / Artist</span>
+              <span class="lang-en">Artist / Studio</span>
+            </dt>
+            <dd>@nene.neth</dd>
+          </div>
+
+          <div class="spec-block">
+            <dt>
+              <span class="lang-vi">Ngôn ngữ thị giác</span>
+              <span class="lang-en">Visual Style</span>
+            </dt>
+            <dd>
+              <span class="lang-vi">Giao thoa Dân gian Việt Nam &amp; Pop-Art Đương đại</span>
+              <span class="lang-en">Vietnamese Folk Aesthetics &amp; Contemporary Pop-Art</span>
+            </dd>
+          </div>
+
+          <div class="spec-block">
+            <dt>
+              <span class="lang-vi">Hạng mục</span>
+              <span class="lang-en">Deliverables</span>
+            </dt>
+            <dd>Key Visual, Handfan, Sticker Set</dd>
+          </div>
+
+          <div class="spec-block">
+            <dt>
+              <span class="lang-vi">Chất liệu chủ đạo</span>
+              <span class="lang-en">Key Motifs</span>
+            </dt>
+            <dd>
+              <span class="lang-vi">Gạch bông xanh, chuỗi hạt răng đen, ca dao cổ</span>
+              <span class="lang-en">Vintage teal tiles, tooth-bead necklaces, folk verse</span>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="specs-pills-row">
+          <span class="spec-pill-dark">RĂNG ĐEN MÔI ĐỎ</span>
+          <span class="spec-pill-outline">HANDFAN EDITION</span>
+        </div>
+      </div>
+    </section>
+
+    <svg class="red-thread-divider" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 C280,-10 520,60 780,20 C900,0 960,40 1000,25" />
+    </svg>
+
+    <!-- ==================== PHẦN 05: KHI ĐEN VÀ TRẮNG ĐỔI NGÔI ==================== -->
+    <section class="sec-closing-cycle">
+      <div class="clothesline-header">
+        <span class="index-num">(05)</span>
+        <h2 class="editorial-heading">
+          <span class="lang-vi"><span class="cursive-cap">K</span>hi Đen và Trắng <em>đổi ngôi</em></span>
+          <span class="lang-en"><span class="cursive-cap">W</span>hen Black and White <em>trade places</em></span>
+        </h2>
+      </div>
+
+      <!-- Tranh “Phụ nữ trước kia và bây giờ” gọn gàng + Câu chuyện thập niên 1930 -->
+      <div class="transition-1930s-grid">
+        <div class="transition-single-illus">
+          <img loading="lazy" decoding="async" src="assets/illus-phu-nu-doi-moi.jpg" alt="Cô phụ nữ trước kia và cô phụ nữ bây giờ sau khi đổi mới" class="ink-blend" />
+        </div>
+
+        <div class="transition-story-col">
+          <p class="lang-vi">
+            Bước sang thập niên 1930 — thời kỳ của báo <em>Phong Hóa, Ngày Nay</em> và phong trào Âu hóa — hình mẫu <strong>“tố nữ tân thời”</strong> với tà áo dài Lemur, mái tóc uốn và kem phấn phương Tây bắt đầu làm lung lay chuẩn mực nghìn năm.
+          </p>
+          <p class="lang-en">
+            Entering the 1930s—the era of <em>Phong Hoa</em> magazine and Western modernization—the image of the <strong>“modern girl”</strong> in tailored Lemur tunics, permed hair, and Western cosmetics began shaking a thousand-year-old standard.
+          </p>
+
+          <p class="lang-vi">
+            Từ thành thị đến thôn quê, các cô gái trẻ dần ngại ngùng với hàm răng đen của bà, của mẹ và rủ nhau đi “cạo răng trắng”. Một cuộc đổi ngôi ngoạn mục diễn ra: thứ từng bị chê là <em>“trắng nhởn”</em> bỗng hóa chuẩn mực mới, còn sắc đen huyền kiêu hãnh lùi dần vào miền ký ức.
+          </p>
+          <p class="lang-en">
+            Young urban women began scraping off black lacquer in favor of white teeth. A dramatic reversal unfolded: what was once mocked as stark white became the new ideal, while proud jet-black enamel quietly receded into memory.
+          </p>
+
+          <div class="tokalon-inline-wrap">
+            <img loading="lazy" decoding="async" src="assets/illus-tokalon-1934.jpg" alt="Quảng cáo phụ nữ tân thời 1934" class="ink-blend" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Dải 4 Sticker tiến trình nụ cười kèm mô tả ngắn -->
+      <div class="floating-stickers-timeline">
+        <div class="sticker-node">
+          <img loading="lazy" decoding="async" src="assets/crm-02.png" alt="Răng đen hạt huyền" />
+          <span>Xưa / Past</span>
+          <h4>
+            <span class="lang-vi">Răng Đen Hạt Huyền</span>
+            <span class="lang-en">Jet-Black Teeth</span>
+          </h4>
+          <p class="lang-vi">Mười quan chẳng tiếc — biểu tượng của nét duyên đằm thắm Việt xưa.</p>
+          <p class="lang-en">The timeless emblem of traditional Vietnamese grace.</p>
+        </div>
+
+        <div class="sticker-node">
+          <img loading="lazy" decoding="async" src="assets/crm-07.png" alt="Tẩy trắng răng" />
+          <span>1930s – Nay / Shift</span>
+          <h4>
+            <span class="lang-vi">Tẩy Trắng Tinh Tươm</span>
+            <span class="lang-en">Bleached &amp; Polished</span>
+          </h4>
+          <p class="lang-vi">Khi vết ố bị xem là khuyết điểm và kem đánh răng trắng sáng lên ngôi.</p>
+          <p class="lang-en">When stains became flaws and whitening toothpaste took over.</p>
+        </div>
+
+        <div class="sticker-node">
+          <img loading="lazy" decoding="async" src="assets/crm-03.png" alt="Răng trắng sứ" />
+          <span>Hiện đại / Present</span>
+          <h4>
+            <span class="lang-vi">Chuẩn Răng Trắng Sứ</span>
+            <span class="lang-en">Porcelain Smile</span>
+          </h4>
+          <p class="lang-vi">Hàm răng trắng đều tăm tắp trở thành “vũ khí” tự tin của thời đại mới.</p>
+          <p class="lang-en">Uniformly radiant white teeth as the modern badge of confidence.</p>
+        </div>
+
+        <div class="sticker-node">
+          <img loading="lazy" decoding="async" src="assets/crm-04.png" alt="Mắc cài và đính đá" />
+          <span>Gen Z / Trend</span>
+          <h4>
+            <span class="lang-vi">Mắc Cài &amp; Đính Đá</span>
+            <span class="lang-en">Braces &amp; Tooth Gems</span>
+          </h4>
+          <p class="lang-vi">Giới trẻ lại thích gắn đá, đeo grillz, mắc cài màu — vòng lặp “độ răng” đang quay lại?</p>
+          <p class="lang-en">With tooth gems, grillz, and colorful braces—is tooth adornment coming full circle?</p>
+        </div>
+      </div>
+
+      <!-- Câu kết chữ bình thường, mạch lạc, lắng đọng -->
+      <div class="closing-reflection-wrap">
+        <p class="closing-text-normal lang-vi">
+          Bây giờ, những người bà với hàm răng đen bóng ấy đã không còn nhiều, những nếp văn hóa cũ dần lùi vào ký ức. Thế hệ sau không còn nhuộm răng, cũng ít ai còn giữ thói quen ăn trầu. Bởi thời thế thay đổi, quan niệm về cái đẹp cũng khác đi.<br /><br />
+          Đã từng có một thời răng đen mới là đẹp, còn ngày nay chúng ta chỉ có thể tự tin khi hàm răng đã trắng sáng… Trắng và đen đã thay thế vị trí của nhau, và chuẩn mực cái đẹp sẽ luôn xoay vòng. Bạn có suy nghĩ gì về điều này?
+        </p>
+        <p class="closing-text-normal lang-en">
+          Today, grandmothers with those gleaming black teeth are few and far between, as old cultural traditions gently recede into memory. Younger generations no longer dye their teeth, and few keep the habit of chewing betel. Because as times change, perceptions of beauty change as well.<br /><br />
+          There was once a time when only blackened teeth were considered beautiful, whereas today we can only feel confident when our teeth are gleaming white… Black and white have traded places, and beauty standards will forever come full circle. What are your thoughts on this?
+        </p>
+      </div>
+
+      <!-- ==================== HỘP FEEDBACK & FOLLOW NÈ NE (2 CỘT KẾ BÊN) ==================== -->
+      <div class="nene-connect-grid">
+        <!-- Cột 1: Hộp gửi cảm nghĩ & feedback về nene289.net@gmail.com -->
+        <div class="nene-connect-card">
+          <h4 class="nene-card-title">
+            <span class="lang-vi">Gửi lời nhắn cho Nè Ne 💌</span>
+            <span class="lang-en">Share Your Thoughts 💌</span>
+          </h4>
+          <p class="nene-card-desc">
+            <span class="lang-vi">Bạn thấy thế nào về dự án này của <strong>Nè Ne</strong>, cho mình thêm cảm nghĩ và feedback nha:</span>
+            <span class="lang-en">What do you think about this project by <strong>Nè Ne</strong>? Share your thoughts and feedback with us:</span>
+          </p>
+          <form id="nene-feedback-form" class="nene-feedback-form" action="https://formsubmit.co/nene289.net@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="[Răng Đen Môi Đỏ] Feedback mới từ độc giả!" />
+            <input type="hidden" name="_captcha" value="false" />
+            <textarea
+              id="nene-feedback-input"
+              name="feedback"
+              rows="3"
+              required
+              placeholder="Viết đôi dòng cảm nghĩ của bạn vào đây nha..."
+            ></textarea>
+            <button type="submit" id="nene-feedback-btn" class="nene-btn nene-btn-submit">
+              <span class="lang-vi">Gửi đi ✦</span>
+              <span class="lang-en">Send Feedback ✦</span>
+            </button>
+            <p id="nene-feedback-status" class="nene-feedback-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <!-- Cột 2 (Kế bên): Follow Instagram @nene.neth -->
+        <div class="nene-connect-card nene-follow-card">
+          <img loading="lazy" decoding="async" src="assets/crm-02.png" alt="Nè Ne Sticker" width="44" height="39" style="height: 44px; width: auto; max-width: 48px;" class="nene-mini-sticker" />
+          <h4 class="nene-card-title">
+            <span class="lang-vi">Đồng hành cùng Nè Ne ✨</span>
+            <span class="lang-en">Stay Tuned with Nè Ne ✨</span>
+          </h4>
+          <p class="nene-card-desc">
+            <span class="lang-vi">Nếu bạn thấy hứng thú với dự án nhỏ này của <strong>Nè Ne</strong> và cũng mong chờ xem những dự án sắp tới: follow Nè Ne nha!</span>
+            <span class="lang-en">If you enjoyed this little project by <strong>Nè Ne</strong> and look forward to upcoming artworks: follow Nè Ne!</span>
+          </p>
+          <a
+            href="https://www.instagram.com/nene.neth/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nene-btn nene-btn-insta"
+          >
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>Follow @nene.neth</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CHÂN TRANG (GHI NGUỒN) ==================== -->
+    <footer class="editorial-footer">
+      <div>
+        <strong class="lang-vi">CHUYÊN SAN NGHỆ THUẬT “RĂNG ĐEN MÔI ĐỎ”</strong>
+        <strong class="lang-en">“BLACK TEETH, CRIMSON LIPS” ART GAZETTE</strong><br />
+        <span class="lang-vi">Dự án giới thiệu Artwork lấy cảm hứng từ quan niệm thẩm mỹ dân gian Việt Nam.</span>
+        <span class="lang-en">An editorial web showcase introducing Artwork inspired by traditional Vietnamese aesthetics.</span>
+      </div>
+      <div>
+        <strong class="lang-vi">NGUỒN TƯ LIỆU &amp; HÌNH ẢNH:</strong>
+        <strong class="lang-en">SOURCES &amp; ARCHIVES:</strong><br />
+        • Artwork &amp; Stickers: <strong>@nene.neth</strong> (<em>Răng Đen Môi Đỏ</em>)<br />
+        • <span class="lang-vi">Nghiên cứu khoa học: PGS.TS Phan Hải Linh, <em>Tạp chí Khoa học ĐHQGHN (2010)</em></span>
+          <span class="lang-en">Academic Research: Assoc. Prof. Phan Hai Linh, <em>VNU Journal of Science (2010)</em></span><br />
+        • <span class="lang-vi">Tư liệu &amp; Minh họa: Báo Phong Hóa (1934), Thư viện Quốc gia VN, Xưa &amp; Nay, Hirata Folk Art Museum</span>
+          <span class="lang-en">Archives &amp; Illustrations: Phong Hoa (1934), National Library of Vietnam, Xua &amp; Nay, Hirata Museum</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js?v=3"></script>
+</body>
+</html>
