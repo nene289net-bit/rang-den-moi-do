@@ -51,7 +51,7 @@
     });
   }
 
-  // Feedback form submission to nene289.net@gmail.com
+  // Feedback form submission to nene289.net@gmail.com via FormSubmit AJAX
   const feedbackForm = document.getElementById('nene-feedback-form');
   const feedbackBtn = document.getElementById('nene-feedback-btn');
   const feedbackStatus = document.getElementById('nene-feedback-status');
@@ -75,13 +75,7 @@
         _template: 'table'
       });
 
-      // Use local server proxy when opened via file:// so Origin header is valid for FormSubmit
-      const apiEndpoint =
-        window.location.protocol === 'file:'
-          ? 'http://127.0.0.1:8089/api/feedback'
-          : '/api/feedback';
-
-      fetch(apiEndpoint, {
+      fetch('https://formsubmit.co/ajax/nene289.net@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -89,17 +83,6 @@
         },
         body: payload
       })
-        .catch(function () {
-          // Direct fallback if static-hosted on Netlify/Vercel
-          return fetch('https://formsubmit.co/ajax/nene289.net@gmail.com', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              Accept: 'application/json'
-            },
-            body: payload
-          });
-        })
         .then(function (res) {
           return res.json();
         })
@@ -118,38 +101,22 @@
             if (feedbackStatus) {
               feedbackStatus.innerHTML =
                 lang === 'en'
-                  ? '💌 Saved! (Owner: Please click <strong>"Activate Form"</strong> in the email sent by FormSubmit to <strong>nene289.net@gmail.com</strong> — check Spam too!)'
-                  : '💌 Đã lưu góp ý! (Lưu ý cho Nè Ne: Hãy mở Gmail <strong>nene289.net@gmail.com</strong> — kiểm tra cả mục Spam/Thư rác — và bấm nút <strong>"Activate Form"</strong> trong mail của FormSubmit 1 lần để nhận tự động nha!)';
+                  ? '💌 Please click <strong>"Activate Form"</strong> in the email sent by FormSubmit to <strong>nene289.net@gmail.com</strong> (check Spam too)!'
+                  : '💌 Nè Ne ơi: Hãy mở Gmail <strong>nene289.net@gmail.com</strong> (kiểm tra cả mục Spam/Thư rác) và bấm nút <strong>"Activate Form"</strong> trong mail của FormSubmit 1 lần để nhận tự động nha!';
             }
           } else {
             const subject = encodeURIComponent('[Răng Đen Môi Đỏ] Feedback cho Nè Ne');
             const body = encodeURIComponent(text);
-            window.open(
-              'https://mail.google.com/mail/?view=cm&fs=1&to=nene289.net@gmail.com&su=' +
-                subject +
-                '&body=' +
-                body,
-              '_blank'
-            );
-            if (feedbackStatus) {
-              feedbackStatus.textContent =
-                lang === 'en'
-                  ? '♥ Opened Gmail to send directly to nene289.net@gmail.com!'
-                  : '♥ Đã mở cửa sổ Gmail gửi tới nene289.net@gmail.com!';
-            }
+            window.location.href =
+              'mailto:nene289.net@gmail.com?subject=' + subject + '&body=' + body;
           }
         })
         .catch(function () {
           if (feedbackBtn) feedbackBtn.disabled = false;
           const subject = encodeURIComponent('[Răng Đen Môi Đỏ] Feedback cho Nè Ne');
           const body = encodeURIComponent(text);
-          window.open(
-            'https://mail.google.com/mail/?view=cm&fs=1&to=nene289.net@gmail.com&su=' +
-              subject +
-              '&body=' +
-              body,
-            '_blank'
-          );
+          window.location.href =
+            'mailto:nene289.net@gmail.com?subject=' + subject + '&body=' + body;
         });
     });
   }
